@@ -21,7 +21,7 @@ public class FoodItemService {
 
     public void deleteFoodItem(Long id) {
         foodItemRepository.deleteById(id);
-    }git add .
+    }
 
     public FoodItem updateFoodItem(Long id, FoodItem updatedItem) {
         return foodItemRepository.findById(id).map(food -> {
